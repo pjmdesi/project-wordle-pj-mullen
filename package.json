@@ -1,8 +1,8 @@
 {
-  "name": "word-game",
+  "name": "word-game-pj-mullen",
   "version": "0.1.0",
   "private": true,
-  "author": "Josh Comeau <me@joshwcomeau.com>",
+  "author": "PJ Mullen <contact@pjm.deisgn>",
   "dependencies": {
     "eslint": "8.49.0",
     "eslint-config-react-app": "7.0.1",
