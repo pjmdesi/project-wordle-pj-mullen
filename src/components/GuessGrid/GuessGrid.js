@@ -2,7 +2,7 @@ import React from 'react';
 import { NUM_OF_GUESSES_ALLOWED } from '../../constants';
 
 function GuessGrid({ guesses }) {
-	const setCellStatus = ([row, col]) => {
+	const parseCellStatus = ([row, col]) => {
 		let cellStatus = '';
 
 		if (guesses[row]) {
@@ -22,7 +22,7 @@ function GuessGrid({ guesses }) {
 						{Array(5)
 							.fill()
 							.map((_, col) => (
-								<div key={`grid-cell-${col}`} className={`cell${setCellStatus([row, col])}`}>
+								<div key={`grid-cell-${col}`} className={`cell${parseCellStatus([row, col])}`}>
 									{guesses[row] && guesses[row].guess[col]}
 								</div>
 							))}
